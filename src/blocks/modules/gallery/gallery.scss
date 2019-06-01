@@ -1,0 +1,9 @@
+.gallery{
+   display: flex;
+   flex-wrap: wrap;
+}
+.gallery__pic{
+   width: 260px;
+   height: 200px;
+   overflow: hidden;
+}

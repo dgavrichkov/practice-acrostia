@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, ul {
@@ -21,4 +22,11 @@ ul{
 	max-width: 500px;
 	width: 100%;
 	height: auto;
+}
+.visually-hidden{
+	position: absolute;
+  	clip: rect(0 0 0 0);
+  	width: 1px;
+  	height: 1px;
+  	margin: -1px;
 }
