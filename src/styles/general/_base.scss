@@ -30,3 +30,33 @@ ul{
   	height: 1px;
   	margin: -1px;
 }
+
+.container {
+   width: 100%;
+   flex: 0 0 auto;
+   position: relative;
+   max-width: $desktopWidth;
+   margin-right: auto;
+   margin-left: auto;
+   overflow: hidden;
+
+   @media screen and (max-width: $desktopWidth) {
+      max-width: $smDesktopWidth;
+   }
+
+   @media screen and (max-width: $smDesktopWidth) {
+      max-width: $tableWidth;
+   }
+
+   @media screen and (max-width: $tableWidth) {
+      max-width: $phoneWidth;
+   }
+
+   @media screen and (max-width: $phoneWidth) {
+      max-width: $smPhoneWidth;
+   }
+
+   @media screen and (max-width: $smPhoneWidth) {
+      max-width: 290px;
+   }
+}
