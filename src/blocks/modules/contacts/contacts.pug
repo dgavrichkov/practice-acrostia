@@ -1,33 +1,35 @@
-section.contacts.container#contacts
-   include ../topbar/topbar.pug
-   h2.contacts__title Contact us
-   p.contacts__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium eaque ea neque molestias qui id, libero eum quia autem, recusandae, provident nobis ex iste sequi eos aut natus quas.
-   div.contacts__widgets
-      div.contacts__data
-         h3 Address
-         address
-            p Acrostia
-            p Sevenoaks Rd
-            p Sevenoaks TN14 7HR, UK
-            ul
-               li Phone: +44555555555
-               li Fax: +44555555555
-               li Email: info@acrostia.com
-               li Scype: AcrOstia
-      div.contacts__map
-         img(src="/img/map.jpg")
-      div.contacts__question
-         form.contacts__form
-         div.contacts__set
-            label(for="name").visually-hidden
-            input(name="name" type="text" id="name" placeholder="Name")
-         div.contacts__set
-            label(for="email").visually-hidden
-            input(name="email" type="email" id="email" placeholder="Email")
-         div.contacts__set
-            label(for="question").visually-hidden
-            input(name="question" type="text" id="question" placeholder="Your question")
-         button(type="submit") Send
+section.contacts#contacts
+   div.container.contacts__main
+      include ../topbar/topbar.pug
+      h2.contacts__title Contact us
+      p.contacts__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium eaque ea neque molestias qui id, libero eum quia autem, recusandae, provident nobis ex iste sequi eos aut natus quas.
+      div.contacts__widgets
+         div.contacts__data
+            h3 Address
+            address
+               p Acrostia
+               p Sevenoaks Rd
+               p Sevenoaks TN14 7HR, UK
+               ul
+                  li Phone: +44555555555
+                  li Fax: +44555555555
+                  li Email: info@acrostia.com
+                  li Scype: AcrOstia
+         div.contacts__map
+            img(src="/img/map.jpg")
+         div.contacts__question
+            form.contacts__form
+            div.contacts__set
+               label(for="name").visually-hidden
+               input(name="name" type="text" id="name" placeholder="Name")
+            div.contacts__set
+               label(for="email").visually-hidden
+               input(name="email" type="email" id="email" placeholder="Email")
+            div.contacts__set
+               label(for="question").visually-hidden
+               input(name="question" type="text" id="question" placeholder="Your question")
+            button(type="submit") Send
    footer.contacts__footer
-      +social("#","#","#","#")
+      div.container
+         +social("#","#","#","#")
 

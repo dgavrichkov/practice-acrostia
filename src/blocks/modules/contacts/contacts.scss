@@ -1,6 +1,15 @@
+.contacts{
+   display: flex;
+   min-height: 100%;
+   flex-direction: column;
+}
 .contacts__title{
 	@include blockTitle;
 }
 .contacts__widgets{
    display: flex;
+}
+.contacts__footer{
+   margin-top: auto;
+   background-color: $color-dark-marine;
 }
