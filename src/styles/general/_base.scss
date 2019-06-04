@@ -1,45 +1,67 @@
 * {
-	box-sizing: border-box;
-	font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+   font-family: "Lato Regular", Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, ul {
-	padding: 0;
-	margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+   padding: 0;
+   margin: 0;
 }
-ul{
-	list-style: none;
+
+ul {
+   list-style: none;
 }
 
 .img-responsive {
-	max-width: 500px;
-	width: 100%;
-	height: auto;
+   max-width: 500px;
+   width: 100%;
+   height: auto;
 }
-.visually-hidden{
-	position: absolute;
-  	clip: rect(0 0 0 0);
-  	width: 1px;
-  	height: 1px;
-  	margin: -1px;
+
+.visually-hidden {
+   position: absolute;
+   clip: rect(0 0 0 0);
+   width: 1px;
+   height: 1px;
+   margin: -1px;
 }
-.wrap{
-  min-height: 100vh;
-  color: $color-base-text;
-  &--plum{
-    background-color: $color-plum-tone;  
-  }
-  &--green{
-    background-color: $color-green-tone;
-  }
-  &--red{
-    background-color: $color-red-tone;
-  }
-  &--sky{
-    background-color: $color-sky-tone;
-  }
-  
+
+.wrap {
+   min-height: 100vh;
+   color: $color-base-text;
+   z-index: -1;
+   &--header{
+      background: url('/img/header-bg.jpg') no-repeat $color-sky-tone;
+      background-size: cover;
+   }
+   &--plum {
+      background:
+         url('/img/bg-plum-wave.png') 0% 50% no-repeat $color-plum-tone;
+   }
+
+   &--green {
+      background: 
+         url('/img/bg-green-wave.png') 100% 40% no-repeat $color-green-tone;
+   }
+
+   &--red {
+      background: 
+         url('/img/bg-red-wave.png') no-repeat $color-red-tone;
+   }
+
+   &--sky {
+      background:
+         url('/img/bg-sky-wave.png') 0% 200% no-repeat $color-sky-tone;
+   }
+
 }
+
 .container {
    width: 100%;
    flex: 0 0 auto;
