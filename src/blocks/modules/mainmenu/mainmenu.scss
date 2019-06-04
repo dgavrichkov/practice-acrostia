@@ -1,8 +1,22 @@
 .mainmenu__list{
    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   // min-height: 50px;
 }
 
 .mainmenu__link{
+	display: block;
 	text-decoration: none;
 	color: $color-base-text;
+	font-size: 18px;
+	font-family: $font-base;
+	padding: 0 20px;
+	padding-top: 40px;
+	padding-bottom: 15px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	&:hover{
+		background-color: rgba(255,255,255, 0.5);
+	}
 }
