@@ -1,6 +1,8 @@
 .topbar{
    display: flex;
    justify-content: space-between;
+
+   color: $color-base-text;
 }
 .topbar__logo{
    font-family: 'Damion', cursive;

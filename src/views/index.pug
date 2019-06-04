@@ -3,9 +3,14 @@ block variables
 	- var title = "LPage"
 
 block content
-	include ../blocks/modules/header/header.pug
-	include ../blocks/modules/services/services.pug
-	include ../blocks/modules/about/about.pug
-	include ../blocks/modules/work/work.pug
-	include ../blocks/modules/contacts/contacts.pug
+	div.wrap.wrap--sky
+		include ../blocks/modules/header/header.pug
+	div.wrap.wrap--red
+		include ../blocks/modules/services/services.pug
+	div.wrap.wrap--plum
+		include ../blocks/modules/about/about.pug
+	div.wrap.wrap--green
+		include ../blocks/modules/work/work.pug
+	div.wrap.wrap--sky
+		include ../blocks/modules/contacts/contacts.pug
 	

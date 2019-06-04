@@ -10,13 +10,6 @@ h1, h2, h3, h4, h5, h6, ul {
 ul{
 	list-style: none;
 }
-.container {
-	@include container();
-	@include sm(max-width, 510px);
-	@include md(max-width, 690px);
-	@include lg(max-width, 930px);
-	@include xl(max-width, 1110px);
-}
 
 .img-responsive {
 	max-width: 500px;
@@ -30,7 +23,23 @@ ul{
   	height: 1px;
   	margin: -1px;
 }
-
+.wrap{
+  min-height: 100vh;
+  color: $color-base-text;
+  &--plum{
+    background-color: $color-plum-tone;  
+  }
+  &--green{
+    background-color: $color-green-tone;
+  }
+  &--red{
+    background-color: $color-red-tone;
+  }
+  &--sky{
+    background-color: $color-sky-tone;
+  }
+  
+}
 .container {
    width: 100%;
    flex: 0 0 auto;

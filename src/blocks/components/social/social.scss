@@ -1,3 +1,9 @@
 .social__list{
    display: flex;
 }
+.social__iconlink{
+	svg{
+		fill: $color-base-text;
+		stroke: $color-base-text;
+	}
+}
