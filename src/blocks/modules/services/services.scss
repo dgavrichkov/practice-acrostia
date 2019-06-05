@@ -1,3 +1,6 @@
+.services{
+	padding-bottom: 40px;
+}
 .services__title{
 	@include blockTitle;
 }
@@ -20,13 +23,26 @@
 }
 .services__list{
 	margin-top: 100px;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+	grid-column-gap: 20px;
+	justify-items: center;
+	@media(max-width: $smDesktopWidth){
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 20px;
+		grid-template-rows: auto;
+	}
 }
 .services__list-item{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 40px 0 30px;
+	background-color: $color-red-card;
+	min-width: 260px;
+	min-height: 400px;
+	
 }
 
 .services__list-pic{
@@ -50,4 +66,19 @@
 	border-radius: 50%;
 	left: 3%;
 	top: 3%;
+}
+.services__list-title{
+	text-transform: uppercase;
+	font-family: $font-light;
+	font-size: 30px;
+	margin-top: 25px;
+	text-align: center;
+}
+.services__list-desc{
+	font-family: $font-base;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 40px;
+	padding: 0 25px;
 }
