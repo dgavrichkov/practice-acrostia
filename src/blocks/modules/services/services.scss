@@ -1,8 +1,53 @@
 .services__title{
 	@include blockTitle;
 }
+.services__description{
+	margin-top: 40px;
+	
+	font-family: $font-base;
+	text-align: center;
+	b{
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 32px;	
+	}
+	p{
+		font-size: 14px;
+		line-height: 24px;
+	}
 
+}
 .services__list{
+	margin-top: 100px;
 	display: flex;
 	justify-content: space-between;
+}
+.services__list-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.services__list-pic{
+	width: 140px;
+	height: 140px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $color-base-text;
+	fill: $color-red-tone;
+	border-radius: 50%;
+	position: relative;
+}
+.services__list-pic::after{
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	width: 94%;
+	height: 94%;
+	border: 5px solid $color-red-tone;
+	border-radius: 50%;
+	left: 3%;
+	top: 3%;
 }
