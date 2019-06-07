@@ -7,8 +7,9 @@ $smPhoneWidth : 320px;
 
 // Colors
 $color-base-text: #ffffff;
-$color-red-tone: #c8535a;
-$color-red-card: #c45158;
+// $color-red-tone: #c8535a;
+$color-red-tone: #b24a50;
+$color-red-card: rgba(200, 83, 90, 0.8);
 $color-sky-tone: #75b4aa;
 $color-plum-tone: #665464;
 $color-green-tone: #81a256;
@@ -22,4 +23,4 @@ $color-dark-marine: #68a097;
 // fonts
 
 $font-light: 'Lato Light', Arial, sans-serif;
-$font-base: 'Lato Regular', Arial, sans-serif;
+$font-base: 'Lato Regular', Arial, sans-serif; 
