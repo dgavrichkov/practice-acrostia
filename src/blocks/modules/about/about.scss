@@ -1,7 +1,32 @@
+.about{
+   padding-bottom: 40px;
+}
 .about__title{
 	@include blockTitle;
 }
 .about__list{
-   display: flex;
-   justify-content: space-around;
+   
+   @include gridList
 }
+.about__list-item{
+   background-color: rgba(31, 23, 30, 0.502);
+   min-width: 260px;
+   min-height: 400px;
+   @include flexCol;
+}
+.about__list-pic{
+   display: flex;
+   justify-content: center;
+   background-color: $color-base-text;
+   padding-top: 10px;
+   width: 165px;
+   height: 165px;
+   border-radius: 50%;
+   border: 2px solid $color-red-tone;
+   overflow: hidden;
+   svg{
+      width: 100%;
+      height: 100%;
+      fill: $
+   }
+} 

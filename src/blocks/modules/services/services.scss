@@ -23,16 +23,17 @@
 }
 .services__list{
 	margin-top: 100px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-auto-rows: auto;
-	grid-column-gap: 20px;
-	justify-items: center;
-	@media(max-width: $smDesktopWidth){
-		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 20px;
-		grid-template-rows: auto;
-	}
+	// display: grid;
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	// grid-auto-rows: auto;
+	// grid-column-gap: 20px;
+	// justify-items: center;
+	// @media(max-width: $smDesktopWidth){
+	// 	grid-template-columns: 1fr 1fr;
+	// 	grid-row-gap: 20px;
+	// 	grid-template-rows: auto;
+	// }
+	@include gridList
 }
 .services__list-item{
 	display: flex;
@@ -42,7 +43,6 @@
 	background-color: $color-red-card;
 	min-width: 260px;
 	min-height: 400px;
-	
 }
 
 .services__list-pic{
