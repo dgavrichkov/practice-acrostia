@@ -12,15 +12,17 @@ $color-red-tone: #b24a50;
 $color-red-card: rgba(200, 83, 90, 0.8);
 $color-sky-tone: #75b4aa;
 $color-plum-tone: #665464;
+$color-plum-weak: #a1859e;
 $color-green-tone: #81a256;
-$color-act-red: #df5c64;
-$color-act-warn: #f5c149;
-$color-act-sky: #74c7d5;
-$color-act-plum: #91778e;
-$color-act-green: #a1ca6c;
+$color-green-act: #a1ca6c;
+$color-red-act: #df5c64;
+$color-warn-act: #f5c149;
+$color-sky-act: #74c7d5;
+$color-plum-act: #91778e;
 $color-dark-marine: #68a097;
 
 // fonts
 
 $font-light: 'Lato Light', Arial, sans-serif;
-$font-base: 'Lato Regular', Arial, sans-serif; 
+$font-base: 'Lato Regular', Arial, sans-serif;
+$font-strong: 'Lato Black', Arial, sans-serif; 

@@ -2,30 +2,34 @@ section.about.container#about
    include ../topbar/topbar.pug
    h2.about__title Who we are & what we do
    .about__description
-      p Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
-   div.about__cap Meet the team
+      p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quam natus quos iusto molestias beatae corporis sed perspiciatis cum ipsa aliquam magni sint omnis, distinctio libero adipisci minima, optio dolores!
+   a(href="#").about__cap Meet the team
    ul.about__list
       li.about__list-item
          .about__list-pic
             +userpic
-         h4.about__list-name John Snow
+         h4.about__list-name John 'Crow' Snow
          p.about__list-job General manager
-         +social("#","#","#","#")
+         div.about__list-social
+            +social("#","#","#","#")
       li.about__list-item
          .about__list-pic
             +userpic
-         h4.about__list-name Davos Sivort
+         h4.about__list-name Bran 'Raven' Stark
          p.about__list-job Design Master
-         +social("#","#","#","#")
+         div.about__list-social
+            +social("#","#","#","#")
       li.about__list-item
          .about__list-pic
             +userpic
-         h4.about__list-name Sandor 'Bloodhound' Kligan
+         h4.about__list-name Sandor 'Hound' Kligan
          p.about__list-job Developer Ninja
-         +social("#","#","#","#")
+         div.about__list-social
+            +social("#","#","#","#")
       li.about__list-item
          .about__list-pic
             +userpic
-         h4.about__list-name Tyrion Lannister
+         h4.about__list-name Tyrion 'Imp' Lannister
          p.about__list-job SEO guru
-         +social("#","#","#","#")
+         div.about__list-social
+            +social("#","#","#","#")
