@@ -1,7 +1,34 @@
 .sorting{
    display: flex;
+   align-items: center;
    justify-content: space-between;
+   border-top: 2px solid transparentize($color-green-act, 0.5);
+   border-bottom: 2px solid transparentize($color-green-act, 0.5);
+   min-height: 100px;
+   margin-top: 50px;
+   margin-bottom: 30px;
+}
+.sorting__cap{
+   text-transform: uppercase;
+   font-family: $font-bold;
+   font-weight: bold;
+   font-size: 20px;
+   margin-left: 20px;
 }
 .sorting__list{
    display: flex;
+   // justify-content: center;
+}
+.sorting__item{
+   // flex-grow: 1;
+}
+.sorting__btn{
+   font-family: $font-bold;
+   font-weight: bold;
+   font-size: 16px;
+   padding: 10px 20px;
+   border-radius: 5px;
+   &:hover{
+      background-color: $color-warn-act;
+   }
 }
