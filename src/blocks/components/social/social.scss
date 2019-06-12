@@ -1,8 +1,16 @@
+
 .social__list{
-   display: flex;
+	display: flex;
+	justify-content: space-between;
 }
 .social__iconlink{
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	svg{
+		width: 50%;
+		height: 50%;
 		fill: $color-base-text;
 		stroke: $color-base-text;
 	}

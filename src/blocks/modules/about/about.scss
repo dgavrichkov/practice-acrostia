@@ -29,17 +29,15 @@
    margin: 50px auto 70px;
 }
 .about__list{
-   
-   @include gridList
+   @include gridList;
+   justify-items: stretch;
 }
 .about__list-item{
+   @include flexCol;
+   padding: 40px 20px 40px;
    background-color: rgba(31, 23, 30, 0.502);
    min-width: 260px;
-   max-width: 260px;
    min-height: 400px;
-   @include flexCol;
-   padding-top: 40px;
-   padding-bottom: 40px;
 }
 .about__list-pic{
    display: flex;
@@ -64,7 +62,6 @@
    color: $color-plum-weak;
    text-align: center;
    margin-top: 20px;
-   max-width: 230px;
 } 
 .about__list-job{
    font-size: 14px;
@@ -74,4 +71,5 @@
 }
 .about__list-social{
    margin-top: auto;
+   @include socialParams(180px, $color-plum-act, 32px);
 }

@@ -13,3 +13,6 @@
    margin-top: auto;
    background-color: $color-dark-marine;
 }
+.contacts__social{
+   @include socialParams(362px, $color-sky-tone, 60px);
+}

@@ -5,7 +5,6 @@
 	font-family: 'Lato Light', Arial;
 	padding-top: 100px;
 }
-
 @mixin gridList{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -22,4 +21,34 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+@mixin socialParams($width, $color, $size){
+	.social__list{
+		width: $width;
+	}
+	.social__iconlink{
+		background-color: $color;
+		width: $size;
+		height: $size;
+		&--fb{
+			&:hover{
+				background-color: #4f689e;
+			}
+		}
+		&--twi{
+			&:hover{
+				background-color: #74c7d5;
+			}
+		}
+		&--be{
+			&:hover{
+				background-color: #df5c64;
+			}
+		}
+		&--in{
+			&:hover{
+				background-color: #3e61af;
+			}
+		}
+	}
 }
