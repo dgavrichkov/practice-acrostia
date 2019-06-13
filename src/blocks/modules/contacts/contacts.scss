@@ -1,7 +1,10 @@
 .contacts{
    display: flex;
-   height: 100%;
    flex-direction: column;
+   min-height: 100vh;
+}
+.contacts__main{
+   flex: 1 0 auto;
 }
 .contacts__title{
 	@include blockTitle;
@@ -10,9 +13,14 @@
    display: flex;
 }
 .contacts__footer{
-   margin-top: auto;
    background-color: $color-dark-marine;
+   flex-shrink: 0;
 }
+
 .contacts__social{
    @include socialParams(362px, $color-sky-tone, 60px);
+   min-height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

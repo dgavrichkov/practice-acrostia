@@ -36,7 +36,6 @@ ul {
 }
 
 .wrap {
-   // min-height: 100vh;
    min-height: 100vh;
    color: $color-base-text;
    z-index: -1;
@@ -61,6 +60,9 @@ ul {
    &--sky {
       background:
          url('/img/bg-sky-wave.png') 0% 200% no-repeat $color-sky-tone;
+   }
+   &--wf{
+      height: 100%;
    }
    @media screen and (max-width: $smDesktopWidth) {
       height: auto;

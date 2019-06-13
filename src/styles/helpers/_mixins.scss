@@ -23,6 +23,9 @@
 	align-items: center;
 }
 @mixin socialParams($width, $color, $size){
+	.social{
+		width: $width;
+	}
 	.social__list{
 		width: $width;
 	}
